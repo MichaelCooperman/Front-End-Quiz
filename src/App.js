@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import CssQuiz from "./components/cssQuiz/CssQuiz";
+import Home from "./components/home/Home";
+import HtmlQuiz from "./components/htlmQuiz/HtmlQuiz";
+import JsQuiz from "./components/jsQuiz/JsQuiz";
+import ReactQuiz from "./components/reactQuiz/ReactQuiz";
+import { Route, Routes } from "react-router-dom";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/html" element={<HtmlQuiz />} />
+      <Route exact path="/css" element={<CssQuiz />} />
+      <Route exact path="/js" element={<JsQuiz />} />
+      <Route exact path="/react" element={<ReactQuiz />} />
+    </Routes>
   );
-}
+};
 
 export default App;
