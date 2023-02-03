@@ -101,7 +101,7 @@ h2 {
   background-color: black;
   height: 50px;
   margin: 5px 0;
-  min-width: 275px;
+  width: 275px;
 }
 
 .button-box {
@@ -132,7 +132,9 @@ h2 {
   font-weight: 600;
   display: flex;
   align-items: center;
+  align-self: center;
   padding-left: 10px;
+  height: 40px;
   border-left: 1px solid white;
 }
 
