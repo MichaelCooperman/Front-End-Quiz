@@ -79,6 +79,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+
   min-width: 80%;
   margin: auto;
 }
@@ -95,6 +96,9 @@ h2 {
   display: flex;
   color: s.$White;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 728px;
 }
 
 .answer {
@@ -102,15 +106,15 @@ h2 {
   padding: 10px 0;
   background-color: s.$Black;
   height: 50px;
-  margin: 5px;
+  margin: 5px 0;
   min-width: 275px;
 }
 
 .button-box {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  min-width: 275px;
+  justify-content: center;
+  width: 100%;
+  max-width: 728px;
 }
 
 .buttons {
@@ -157,6 +161,39 @@ h2 {
 .disabled-answer {
   margin: 5px;
   pointer-events: none;
+}
+
+@media (min-width: 425px) {
+  .answer {
+    margin: 5px;
+  }
+
+  .answers {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .answers {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .question-number {
+    padding: 70px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .question-number {
+    padding: 150px 0;
+  }
+
+  .quiz-container {
+    padding: 30px 40px;
+  }
 }
 
 ///////////////////////////////////Results/////////////////////////////////
