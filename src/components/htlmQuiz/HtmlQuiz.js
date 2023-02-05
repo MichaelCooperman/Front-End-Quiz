@@ -41,7 +41,7 @@ const HtmlQuiz = () => {
         {!quizState.showResults && (
           <React.Fragment>
             <div className={classes["top"]}>
-              <Link to="/">
+              <Link onClick={() => dispatch({ type: "RESTART" })} to="/">
                 <AiFillHome size="30px" color="black" />
               </Link>
               <h3>

@@ -65,6 +65,16 @@ h2 {
     border: 2px solid s.$White;
   }
 }
+
+@media (min-width: 1024px) {
+  .container {
+    justify-content: center;
+
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+}
 ///////////////////////////////////Quizes/////////////////////////////////
 .quiz-container {
   width: 100%;
