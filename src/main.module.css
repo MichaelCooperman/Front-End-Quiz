@@ -11,12 +11,14 @@ html {
 section {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-width: 320px;
   background-color: rgb(205, 231, 255);
 }
 
 h1 {
   font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -27,7 +29,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 1440px;
   width: 100%;
   padding: 20px 20px;
@@ -61,14 +63,6 @@ h2 {
   border: 2px solid white;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    justify-content: center;
-  }
-  .container h1 {
-    margin-bottom: 40px;
-  }
-}
 .quiz-container {
   width: 100%;
   max-width: 1440px;

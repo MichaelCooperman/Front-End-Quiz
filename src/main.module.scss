@@ -13,12 +13,14 @@ html {
 section {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-width: 320px;
   background-color: s.$LightBlue;
 }
 
 h1 {
   font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -29,7 +31,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 1440px;
   width: 100%;
   padding: 20px 20px;
@@ -66,15 +68,6 @@ h2 {
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
-    justify-content: center;
-
-    h1 {
-      margin-bottom: 40px;
-    }
-  }
-}
 ///////////////////////////////////Quizes/////////////////////////////////
 .quiz-container {
   width: 100%;
@@ -89,7 +82,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-
   min-width: 80%;
   margin: auto;
 }
